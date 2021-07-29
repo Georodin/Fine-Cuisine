@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>PlantHerbgarden</defName>
+		<label>herb garden</label>
+		<description>A combination of different flavorful herbs used in two- and three-star meals.(Fine Cuisine)</description>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+			<Beauty>2</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/Herbgarden</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<growDays>4.6</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawHerbs</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<immatureGraphicPath>Things/ImmaturePlants/Herbgarden_Immature</immatureGraphicPath>
+			<visualSizeRange>1.1~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>RawHerbs</defName>
+		<label>herbs</label>
+		<description>A combination of different flavorful herbs used in two and three-star meals. They start to loose flavor after some time.(Fine Cuisine)</description>
+		<graphicData>
+			<texPath>Things/Food/RawHerbs</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.2</MarketValue>
+			<Nutrition>0.02</Nutrition>
+			<Beauty>0</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>PlantSugarcane</defName>
+		<label>sugarcane</label>
+		<description>Sugarcane to be used as sweetener and for caramelizing things for the three-star meal. Can also be eaten raw and has a sweet vanilla taste.(Fine Cuisine)</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/Sugarcane</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<growDays>5.4</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawSugarcane</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<immatureGraphicPath>Things/ImmaturePlants/Sugarcane_Immature</immatureGraphicPath>
+			<visualSizeRange>1.5~2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RawSugarcane</defName>
+		<label>sugarcane</label>
+		<description>Sugarcane to be used as sweetener and for caramelizing things within the three-star meal. Can also be eaten raw and has a sweet vanilla taste.(Fine Cuisine)</description>
+		<graphicData>
+			<texPath>Things/Food/RawSugarcane</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.4</MarketValue>
+			<Nutrition>0.05</Nutrition>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>90</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought></tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+</Defs>

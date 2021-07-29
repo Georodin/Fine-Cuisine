@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FineCuisine", "FineCuisine\FineCuisine.csproj", "{77476DF1-D078-49DD-ACA4-D4DF8DAEDE98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77476DF1-D078-49DD-ACA4-D4DF8DAEDE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77476DF1-D078-49DD-ACA4-D4DF8DAEDE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77476DF1-D078-49DD-ACA4-D4DF8DAEDE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77476DF1-D078-49DD-ACA4-D4DF8DAEDE98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D39E494D-51DC-4599-A34D-0B8A0BED527B}
+	EndGlobalSection
+EndGlobal

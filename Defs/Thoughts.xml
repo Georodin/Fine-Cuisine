@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>AteOnestarMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate one-star meal</label>
+        <description>That one-star meal was amazing. It nourished my body and soul.</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>  
+  <ThoughtDef>
+    <defName>AteTwostarMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate two-star meal</label>
+        <description>That two-star meal was just WOW. It's almost perfection.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AteThreestarMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate three-star meal</label>
+        <description>I can't even think of a comparable dining experience. I need to repeat this!</description>
+        <baseMoodEffect>18</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

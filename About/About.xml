@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Fine Cuisine</name>
+  <author>Georodin</author>
+  <url></url>
+<supportedVersions>
+  <li>1.0</li>
+  <li>1.1</li>
+  <li>1.2</li>
+  <li>1.3</li>
+</supportedVersions>
+<packageId>georodin.finecuisine</packageId>
+<description>
+Did you ever wonder what you gonna do with a Chef after reaching level 8 in cooking?
+Did you also wonder where you gonna use these berries in the late game?
+
+Now I can provide the answer. This mod simply adds different star meals that consists of berries, meat-type, veggie-type and many more ingredients. 
+You can produce them at both, the fueled stove and electrical stove. The mood buffs above lavish meal and all star meals cancel each other out.
+When a two or three-star meal is consumed or destroyed the contained plate will drop.
+Also meant to provide a even better Gastronomy experience.
+
+Content
+- one-star meal (berries, meat-type and veggie-type) cooking 10
+- two-star meal (berries, herbs, meat-type and veggie-type served on a stone plate) cooking 12
+- three-star meal (berries, sugarcane, herbs, meat-type and veggie-type served on a fancy silver, jade or gold plate) cooking 15
+- herbgarden "plant"s
+- sugarcane plant
+- stone plates at stonecutter
+- fancy plates at smith(metal-type) and jade at stonecutter
+
+Comming soon!
+- support for other mods that introduce fruits and sugar used as ingredients in meals
+- Fine Cuisine furniture and wine selection
+
+Special thanks to Topodic for introducing me to C# coding and making this possible
+also a huge special thanks to SirLalaPyon for 90% of the ART, big thanks! check out his other work aswell
+and also special thanks to Chefs Table, Eater, SETHLUI.com, Food Insider and many more...
+
+If you have suggestions just use the discussion thread at the Steam Workshop-page. Please mark your entry's with [BUG] or [SUGGESTION] :)
+</description>
+</ModMetaData>

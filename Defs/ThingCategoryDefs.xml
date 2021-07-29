@@ -1,0 +1,25 @@
+<Defs>
+    <ThingCategoryDef>
+        <defName>Plates</defName>
+        <label>plates</label>
+        <parent>Manufactured</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Things/UI/Icons/ThingCategories/Plates</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>PlatesStone</defName>
+        <label>stone plates</label>
+        <parent>Plates</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Things/UI/Icons/ThingCategories/Plates</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>PlatesFancy</defName>
+        <label>fancy plates</label>
+        <parent>Plates</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Things/UI/Icons/ThingCategories/Plates</iconPath>
+    </ThingCategoryDef>
+</Defs>

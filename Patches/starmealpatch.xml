@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- lavish meal add C# Class -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "MealLavish"]</xpath>
+		<value>
+			<thingClass>FineCuisine.ThingDef_MealLavish</thingClass>
+		</value>
+	</Operation>
+	
+	<!-- stone stuff categorie -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name = "StoneBlocksBase"]/stuffProps/categories</xpath>
+		<value>
+			<li>StuffStoneBlocks</li>
+		</value>
+	</Operation>	
+	
+	
+	
+  </Patch>

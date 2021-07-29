@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StuffCategoryDef>
+    <defName>StuffStoneBlocks</defName>
+    <label>stuff stone blocks</label>
+    <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+  </StuffCategoryDef>
+  
+  <StuffCategoryDef>
+    <defName>PlateFancyMaterial</defName>
+    <label>plate fancy material</label>
+    <destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>
+  </StuffCategoryDef>
+  
+ </Defs>

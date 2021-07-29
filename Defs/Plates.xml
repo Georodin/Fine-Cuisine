@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Stone Plates -->
+	<ThingDef Name="PlateStoneBase" ParentName="ResourceBase" Abstract="true">
+		<defName>PlateStoneBase</defName>
+		<label>stone plate</label>
+		<tradeability>Buyable</tradeability>
+		<description>A stone plate used to serve a two-star meal.(Fine Cuisine)</description>
+		<graphicData>
+			<texPath>Things/Item/Plate</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<Nutrition>1</Nutrition>
+			<MarketValue>6</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>PlatesStone</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>1</preferability>
+			<tasteThought></tasteThought>
+			<ingestEffect></ingestEffect>
+			<ingestSound></ingestSound>
+			<foodType>Tree</foodType>
+		</ingestible>
+		<costStuffCount>1</costStuffCount>
+	</ThingDef>
+	<RecipeDef Name="CutPlateBase" Abstract="true">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<researchPrerequisite>Stonecutting</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!-- Sandstone -->
+	<ThingDef ParentName="PlateStoneBase">
+		<defName>PlateSandstone</defName>
+		<label>sandstone plate</label>
+		<tradeability>Buyable</tradeability>
+		<description>A sandstone plate to serve a two-star meal.(Fine Cuisine)</description>
+		<graphicData>
+			<color>(126,104,94)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(126,104,94)</color>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutSandstonePlate</defName>
+		<jobString>Cutting sandstone plate from blocks.</jobString>
+		<label>make sandstone plate</label>
+		<workAmount>690</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksSandstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateSandstone>1</PlateSandstone>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutSandstonePlateBulk</defName>
+		<jobString>Cutting sandstone plate from blocks.</jobString>
+		<label>make sandstone plate x4</label>
+		<workAmount>2760</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksSandstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateSandstone>4</PlateSandstone>
+		</products>
+	</RecipeDef>
+	<!-- Granite -->
+	<ThingDef ParentName="PlateStoneBase">
+		<defName>PlateGranite</defName>
+		<label>granite plate</label>
+		<tradeability>Buyable</tradeability>
+		<description>A granite plate to serve a two-star meal.(Fine Cuisine)</description>
+		<graphicData>
+			<color>(105,95,97)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(105,95,97)</color>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutGranitePlate</defName>
+		<jobString>Cutting granite plate from blocks.</jobString>
+		<label>make granite plate</label>
+		<workAmount>830</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksGranite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksGranite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateGranite>1</PlateGranite>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutGranitePlateBulk</defName>
+		<jobString>Cutting granite plate from blocks.</jobString>
+		<label>make granite plate x4</label>
+		<workAmount>3320</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksGranite</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksGranite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateGranite>4</PlateGranite>
+		</products>
+	</RecipeDef>
+	<!-- Limestone -->
+	<ThingDef ParentName="PlateStoneBase">
+		<defName>PlateLimestone</defName>
+		<label>limestone plate</label>
+		<tradeability>Buyable</tradeability>
+		<description>A limestone plate to serve a two-star meal.(Fine Cuisine)</description>
+		<graphicData>
+			<color>(158,153,135)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(158,153,135)</color>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutLimestonePlate</defName>
+		<jobString>Cutting limestone plate from blocks.</jobString>
+		<label>make limestone plate</label>
+		<workAmount>830</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateLimestone>1</PlateLimestone>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutLimestonePlateBulk</defName>
+		<jobString>Cutting limestone plate from blocks.</jobString>
+		<label>make limestone plate x4</label>
+		<workAmount>3320</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateLimestone>4</PlateLimestone>
+		</products>
+	</RecipeDef>
+	<!-- Slate -->
+	<ThingDef ParentName="PlateStoneBase">
+		<defName>PlateSlate</defName>
+		<label>slate plate</label>
+		<tradeability>Buyable</tradeability>
+		<description>A slate plate to serve a two-star meal.(Fine Cuisine)</description>
+		<graphicData>
+			<color>(70,70,70)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(70,70,70)</color>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutSlatePlate</defName>
+		<jobString>Cutting slate plate from blocks.</jobString>
+		<label>make slate plate</label>
+		<workAmount>830</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSlate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateSlate>1</PlateSlate>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutSlatePlateBulk</defName>
+		<jobString>Cutting slate plate from blocks.</jobString>
+		<label>make slate plate x4</label>
+		<workAmount>3320</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSlate</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateSlate>4</PlateSlate>
+		</products>
+	</RecipeDef>
+	<!-- MARBLE -->
+	<ThingDef ParentName="PlateStoneBase">
+		<defName>PlateMarble</defName>
+		<label>marble plate</label>
+		<tradeability>Buyable</tradeability>
+		<description>A marble plate to serve a two-star meal.(Fine Cuisine)</description>
+		<graphicData>
+			<color>(132,135,132)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(132,135,132)</color>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutMarblePlate</defName>
+		<jobString>Cutting marble plate from blocks.</jobString>
+		<label>make marble plate</label>
+		<workAmount>760</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksMarble</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksMarble</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateMarble>1</PlateMarble>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="CutPlateBase">
+		<defName>CutMarblePlateBulk</defName>
+		<jobString>Cutting marble plate from blocks.</jobString>
+		<label>make marble plate x4</label>
+		<workAmount>3040</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksMarble</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksMarble</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateMarble>4</PlateMarble>
+		</products>
+	</RecipeDef>
+	<!-- Fancy Plates -->
+	<ThingDef ParentName="ResourceBase" Name="PlateFancyBase" Abstract="true">
+		<defName>PlateFancy</defName>
+		<label>fancy plate</label>
+		<tradeability>Buyable</tradeability>
+		<description>A very expensive appealing plate to serve a three-star meal upon.(Fine Cuisine)</description>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>PlatesFancy</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>1</preferability>
+			<tasteThought></tasteThought>
+			<ingestEffect></ingestEffect>
+			<ingestSound></ingestSound>
+			<foodType>Tree</foodType>
+		</ingestible>
+	</ThingDef>
+	<ThingDef ParentName="PlateFancyBase">
+		<defName>PlateGold</defName>
+		<label>gold plate</label>
+		<description>A very expensive appealing gold plate to serve a three-star meal upon.(Fine Cuisine)</description>
+		<graphicData>
+			<texPath>Things/Item/GoldPlate</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>210</MarketValue>
+			<Beauty>28</Beauty>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="PlateFancyBase">
+		<defName>PlateSilver</defName>
+		<label>silver plate</label>
+		<description>A expensive appealing silver plate to serve a three-star meal upon.(Fine Cuisine)</description>
+		<graphicData>
+			<texPath>Things/Item/SilverPlate</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>32</MarketValue>
+			<Beauty>10</Beauty>
+		</statBases>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>
+	</ThingDef>
+	<ThingDef ParentName="PlateFancyBase">
+		<defName>PlateJade</defName>
+		<label>jade plate</label>
+		<description>A expensive appealing jade plate to serve a three-star meal upon.(Fine Cuisine)</description>
+		<graphicData>
+			<texPath>Things/Item/JadePlate</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>26</MarketValue>
+			<Beauty>15</Beauty>
+		</statBases>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+	</ThingDef>
+	<!-- silver recipe -->
+	<RecipeDef>
+		<defName>SmithSilverPlate</defName>
+		<jobString>Forging fancy plate from silver.</jobString>
+		<label>make fancy silver plate</label>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateSilver>1</PlateSilver>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<researchPrerequisite>Smithing</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>SmithSilverPlateBulk</defName>
+		<jobString>Forging 4x fancy plate from silver.</jobString>
+		<label>make fancy silver plate x4</label>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<workAmount>3200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateSilver>4</PlateSilver>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<researchPrerequisite>Smithing</researchPrerequisite>
+	</RecipeDef>
+	<!-- gold recipe -->
+	<RecipeDef>
+		<defName>SmithGoldPlate</defName>
+		<jobString>Forging fancy plate from gold.</jobString>
+		<label>make fancy gold plate</label>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateGold>1</PlateGold>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<researchPrerequisite>Smithing</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>SmithGoldPlateBulk</defName>
+		<jobString>Forging 4x fancy plate from gold.</jobString>
+		<label>make fancy gold plate x4</label>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<workAmount>3200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateGold>4</PlateGold>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<researchPrerequisite>Smithing</researchPrerequisite>
+	</RecipeDef>
+	<!-- jade recipe -->
+	<RecipeDef>
+		<defName>SmithJadePlate</defName>
+		<jobString>Forging fancy plate from jade.</jobString>
+		<label>make fancy jade plate</label>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Jade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateJade>1</PlateJade>
+		</products>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<researchPrerequisite>Stonecutting</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>CutJadePlateBulk</defName>
+		<jobString>Cutting 4x fancy plate from jade.</jobString>
+		<label>make fancy jade plate x4</label>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>3200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Jade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlateJade>4</PlateJade>
+		</products>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<researchPrerequisite>Stonecutting</researchPrerequisite>
+	</RecipeDef>
+</Defs>
