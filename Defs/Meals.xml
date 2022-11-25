@@ -126,10 +126,12 @@
 			<Nutrition>1</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>12</preferability>
+			<preferability>9</preferability>
 			<tasteThought>AteOnestarMeal</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-20</optimalityOffsetFeedingAnimals>
 		</ingestible>
 		<thingClass>FineCuisine.ThingDef_OneStarMeal</thingClass>
 	</ThingDef>
@@ -293,15 +295,17 @@
 			<Nutrition>1</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>13</preferability>
+			<preferability>9</preferability>
 			<tasteThought>AteTwostarMeal</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>25</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-25</optimalityOffsetFeedingAnimals>
 		</ingestible>
 		<thingClass>FineCuisine.ThingDef_TwoStarMeal</thingClass>
 	</ThingDef>
 	<!-- three star meal -->
-	<ThingDef Name="ThreeStarMealBase" ParentName="MealCooked" Abstract="true">
+	<ThingDef Name="ThreeStarMealBase" ParentName="MealCooked" Abstract="True">
 		<tradeability>Buyable</tradeability>
 		<defName>ThreeStarMeal</defName>
 		<label>three-star meal</label>
@@ -312,10 +316,12 @@
 			<Nutrition>1</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>14</preferability>
+			<preferability>9</preferability>
 			<tasteThought>AteThreestarMeal</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>30</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-30</optimalityOffsetFeedingAnimals>
 		</ingestible>
 		<thingClass>FineCuisine.ThingDef_ThreeStarMeal</thingClass>
 	</ThingDef>
