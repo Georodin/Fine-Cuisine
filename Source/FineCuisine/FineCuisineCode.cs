@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace FineCuisine
@@ -12,8 +7,8 @@ namespace FineCuisine
     {
         protected override void PostIngested(Pawn ingester)
         {
-            Log.Message("DEBUG1");
-            Log.Message("DEBUG1 " + this.def.ingestible.preferability);
+            //Log.Message("DEBUG1");
+            //Log.Message("DEBUG1 " + this.def.ingestible.preferability);
             if (this.def.defName == "OneStarMeal")
             {
                 foreach (Thought_Memory t in ingester.needs.mood.thoughts.memories.Memories)
@@ -39,7 +34,7 @@ namespace FineCuisine
     {
         protected override void PostIngested(Pawn ingester)
         {
-            Log.Message("DEBUG2 " + this.def.ingestible.preferability);
+            //Log.Message("DEBUG2 " + this.def.ingestible.preferability);
 
             if (this.def.defName == "TwoStarMeal")
             {
@@ -79,7 +74,7 @@ namespace FineCuisine
         {
             foreach (ThingDef c in this.GetComp<CompIngredients>()?.ingredients)
             {
-                Log.Message("try to place plate");
+                //Log.Message("try to place plate");
                 if (c.defName.Contains("Plate"))
                 {
                     ThingDef thingDef = ThingDef.Named(c.defName);
@@ -87,7 +82,7 @@ namespace FineCuisine
                     Thing thing = ThingMaker.MakeThing(thingDef, null);
 
                     if (this.Map!=null) {
-                        Log.Message("map: "+this.Map);
+                        //Log.Message("map: "+this.Map);
                         GenSpawn.Spawn(thing, this.Position, this.Map);
                     }
                     

@@ -16,3 +16,9 @@ D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fine-Cuisine\Source\
 D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fine-Cuisine\Source\FineCuisine\obj\Debug\FineCuisine.csproj.CoreCompileInputs.cache
 D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fine-Cuisine\Source\FineCuisine\obj\Debug\FineCuisine.csproj.CopyComplete
 D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fine-Cuisine\Source\FineCuisine\obj\Debug\FineCuisine.dll
+C:\Users\Georodin\Documents\GitHub\1.5\Assemblies\FineCuisine.dll
+C:\Users\Georodin\Documents\GitHub\Fine-Cuisine\Source\FineCuisine\obj\Debug\FineCuisine.csproj.AssemblyReference.cache
+C:\Users\Georodin\Documents\GitHub\Fine-Cuisine\Source\FineCuisine\obj\Debug\FineCuisine.csproj.CoreCompileInputs.cache
+C:\Users\Georodin\Documents\GitHub\Fine-Cuisine\Source\FineCuisine\obj\Debug\FineCuisine.csproj.CopyComplete
+C:\Users\Georodin\Documents\GitHub\Fine-Cuisine\Source\FineCuisine\obj\Debug\FineCuisine.dll
+C:\Users\Georodin\Documents\GitHub\Fine-Cuisine\1.5\Assemblies\FineCuisine.dll
